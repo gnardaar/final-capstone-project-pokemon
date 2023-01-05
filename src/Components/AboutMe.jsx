@@ -1,13 +1,13 @@
 import React from "react";
 // import "../animation";
-import '../assets/profile-pic.jpg';
+import '../assets/profilePic.jpg';
 const AboutMe = () => {
   return (
     <div>
       <div className="container">
         <div className="profile-pic">
           <figure>
-            <img src="src\Components\profile-pic.jpg" alt="" />
+            <img src="../assets/profilePic.jpg" alt="" />
           </figure>
           <figcaption>I am absolutely in love with My dog</figcaption>
 

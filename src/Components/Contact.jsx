@@ -37,7 +37,7 @@ export const Contact = () => {
               <div className="row no-gutters">
                 <div className="col-md-6">
                   <div className="contact-wrap w-100 p-lg-5 p-4">
-                    <h3 className="mb-4">Send us a message</h3>
+                    <h3 className="mb-4">Send me a message</h3>
                     <form
                       id="contactForm"
                       className="contactForm"
@@ -109,9 +109,9 @@ export const Contact = () => {
                 </div>
                 <div className="col-md-6 d-flex align-items-stretch">
                   <div className="info-wrap w-100 p-lg-5 p-4 img">
-                    <h3>Contact us</h3>
+                    <h3>Contact me</h3>
                     <p className="mb-4">
-                      We're open for any suggestion or just to have a chat
+                      I will be open for any suggestion or just to have a chat
                     </p>
                     <div className="dbox w-100 d-flex align-items-start">
                       <div className="icon d-flex align-items-center justify-content-center">
@@ -119,8 +119,7 @@ export const Contact = () => {
                       </div>
                       <div className="text pl-3">
                         <p>
-                          <span>Address:</span> 198 West 21th Street, Suite 721
-                          New York NY 10016
+                          <span>Address:</span> 1234 Fake st.
                         </p>
                       </div>
                     </div>
@@ -131,7 +130,7 @@ export const Contact = () => {
                       <div className="text pl-3">
                         <p>
                           <span>Phone:</span>
-                          <a href="tel://123456789">+1235 2355 98</a>
+                          <a href="tel://123456789">+(720)-831-4543</a>
                         </p>
                       </div>
                     </div>
@@ -143,7 +142,7 @@ export const Contact = () => {
                         <p>
                           <span>Email:</span>
                           <a href="mailto:info@yoursite.com">
-                            info@yoursite.com
+                            andrewkraus521@gmail.com
                           </a>
                         </p>
                       </div>
@@ -155,7 +154,7 @@ export const Contact = () => {
                       <div className="text pl-3">
                         <p>
                           <span>Website:</span>
-                          <a href="#">yoursite.com</a>
+                          <a href="#">whlending.com (not actually mine, but I made it.) </a>
                         </p>
                       </div>
                     </div>
