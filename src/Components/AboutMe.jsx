@@ -1,12 +1,47 @@
-import React from 'react'
-
+import React from "react";
+// import "../animation";
+import '../assets/profile-pic.jpg';
 const AboutMe = () => {
   return (
     <div>
-        <h1>about me</h1>
-      
-    </div>
-  )
-}
+      <div className="container">
+        <div className="profile-pic">
+          <figure>
+            <img src="src\Components\profile-pic.jpg" alt="" />
+          </figure>
+          <figcaption>I am absolutely in love with My dog</figcaption>
 
-export default AboutMe
+          <div className="stat-container">
+            <ul>
+              <li>Front End</li>
+              <div className="stat-bar"></div>
+              <li>Back End</li>
+              <div className="stat-bar"></div>
+
+              <li>full stack</li>
+              <div className="stat-bar"></div>
+
+            </ul>
+          </div>
+          <div className="right-container">
+            hello
+          </div>
+
+          {/* <div id="app">
+            <div id="hero">
+              <h1>
+                NEON
+                <br />
+                CURSOR
+              </h1>
+            </div>
+          </div> */}
+
+          
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default AboutMe;

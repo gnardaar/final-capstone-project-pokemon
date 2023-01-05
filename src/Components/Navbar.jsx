@@ -40,12 +40,14 @@ const useStyles = makeStyles({
     navbarItem: {
         color: 'white',
         textDecoration: 'none',
+        
     },
     p5: {
         padding: '5px',
     },
     spaceBetween: {
         justifyContent: 'space-between',
+        marginRight:'20px'
     },
     alignCenter: {
         alignItems: 'center'
@@ -89,13 +91,11 @@ export const Navbar = () => {
                         </li>
                         <li>
                             <Button>
-                                <Link to='Contact' className={`${classes.navbarItem} ${classes.psides}`}>Contact Us</Link>
+                                <Link to='Contact' className={`${classes.navbarItem} ${classes.psides}`}>Contact Me</Link>
                             </Button>
                         </li>
                         <li>
-                            <Button>
-                                <Link to='About' className={`${classes.navbarItem} ${classes.psides}`}>About Us</Link>
-                            </Button>
+
                         </li>
                     {/* </AuthCheck> */}
                     </Suspense>

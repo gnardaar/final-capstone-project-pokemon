@@ -1,5 +1,5 @@
 import React from "react";
-import "./styles.css";
+import "./styles.scss";
 
 export default function Card({pokemon, loading,infoPokemon}) {
   console.log(pokemon);
@@ -11,7 +11,7 @@ export default function Card({pokemon, loading,infoPokemon}) {
         pokemon.map((item) => {
           return (
             <>
-              <div className="card"  onClick={()=>infoPokemon(item)}>
+              <div className="card" key={item.id} onClick={()=>infoPokemon(item)}>
                 <h2 >{item.id }</h2>
                 <img  src={item.sprites.front_default} alt="" />
                 <h2>{item.name}</h2>
