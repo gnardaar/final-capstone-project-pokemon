@@ -1,16 +1,19 @@
 
-import firebase from 'firebase/compat/app';
-import 'firebase/compat/database'
+import { initializeApp } from "firebase/app";
+import { getFirestore } from "@firebase/firestore";
 
-const firebaseConfig = {
-    apiKey: "AIzaSyBhICdDobrInG_dHwilH8CGD_vcssBVLKc",
-    authDomain: "pokemon-app-f7162.firebaseapp.com",
-    projectId: "pokemon-app-f7162",
-    storageBucket: "pokemon-app-f7162.appspot.com",
-    messagingSenderId: "680888499724",
-    appId: "1:680888499724:web:0aaf430b0a7efef8d6f829"
-  };
+export  const firebaseConfig = {
+  apiKey: "AIzaSyBGiMaBhYw6hvYsfRwDqfOC-74QSp4w9-8",
+  authDomain: "pokemon-app-8f833.firebaseapp.com",
+  projectId: "pokemon-app-8f833",
+  storageBucket: "pokemon-app-8f833.appspot.com",
+  messagingSenderId: "339423384889",
+  appId: "1:339423384889:web:92a82fd4c74f0272e504e8"
+};
 
-  const fireDb = firebase.initializeApp(firebaseConfig);
 
-  export default fireDb.database().ref();
+
+  const firebaseDb = initializeApp(firebaseConfig);
+
+ export const db = getFirestore(firebaseDb)
+ 

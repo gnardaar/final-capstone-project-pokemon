@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import firebaseDb from "../firebase";
+
+// import {firebaseDb} from "../firebase";
 import  './contact.scss';
 
 export const Contact = () => {
@@ -17,7 +18,7 @@ export const Contact = () => {
     if (!name || !email || !subject || !message) {
       toast.error("Please provide value in each input field");            
     } else {
-      firebaseDb.child("contacts").push(state);
+      // firebaseDb.child("contacts").push(state);
       setState({ name: "", email: "", subject: "", message: "" });
       toast.success("Form Submitted Successfully");
     }
