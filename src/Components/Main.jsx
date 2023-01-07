@@ -3,6 +3,8 @@ import React, { useEffect, useState } from "react";
 import Card from "./Card";
 import Pokeinfo from "./Pokeinfo";
 import axios from "axios";
+
+
 export const Main = () => {
   const [pokeData, setPokeData] = useState([]);
   const [loading, setLoading] = useState(true);
@@ -10,6 +12,8 @@ export const Main = () => {
   const [nextUrl, setNextUrl] = useState();
   const [prevUrl, setPrevUrl] = useState();
   const [pokeDex, setPokeDex] = useState();
+
+
 
   const pokeFun = async () => {
     setLoading(true);
@@ -47,24 +51,30 @@ export const Main = () => {
         />
 
         <div className="btn-group">
-          { prevUrl && <button
-            onClick={() => {
-              setPokeData([]);
-              setUrl(prevUrl);
-            }}>Previous
-          </button>}
+          {prevUrl && (
+            <button
+              onClick={() => {
+                setPokeData([]);
+                setUrl(prevUrl);
+              }}
+            >
+              Previous
+            </button>
+          )}
           <button
             onClick={() => {
               setPokeData([]);
               setUrl(nextUrl);
-            }}>Next
-            </button>
+            }}
+          >
+            Next
+          </button>
         </div>
       </div>
       <div className="right-content">
         <Pokeinfo data={pokeDex} />
+
       </div>
     </div>
-    
   );
 };

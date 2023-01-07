@@ -5,7 +5,7 @@ import Button from "@material-ui/core/Button";
 import { makeStyles } from "@material-ui/core";
 import "material-ui-core";
 import { Link } from "react-router-dom";
-// import { AuthCheck } from 'reactfire'
+// import { AuthCheck } from 'react'
 
 const useStyles = makeStyles({
   logo: {
@@ -73,10 +73,10 @@ export const Navbar = () => {
     <div
       className={`${classes.row} ${classes.navbar} ${classes.width100} ${classes.alignCenter} ${classes.p5} ${classes.spaceBetween}`}
     >
-      {/* <div className={`${classes.navlogo} `}>
-                    <Link to='/' className={`${classes.logo} ${classes.p5}`}>
-                    </Link>
-            </div> */}
+      <div className={`${classes.navlogo} `}>
+          <Link to='/' className={`${classes.logo} ${classes.p5}`}>
+          </Link>
+            </div>
       <div className={`${classes.width60} ${classes.alignCenter}`}>
         <ul
           className={`${classes.ul} ${classes.row} ${classes.spaceBetween} ${classes.psides}`}
@@ -92,7 +92,7 @@ export const Navbar = () => {
                 about me
               </Link>
             </li>
-            {/* }> */}
+             {/* }>  */}
             <li>
               <Button>
                 <Link
@@ -106,6 +106,16 @@ export const Navbar = () => {
             <li>
               <Button>
                 <Link
+                  to="/users"
+                  className={`${classes.navbarItem} ${classes.psides}`}
+                >
+                  Users
+                </Link>
+              </Button>
+            </li>
+            <li>
+              <Button>
+                <Link
                   to="Contact"
                   className={`${classes.navbarItem} ${classes.psides}`}
                 >
@@ -113,7 +123,7 @@ export const Navbar = () => {
                 </Link>
               </Button>
             </li>
-            {/* </AuthCheck> */}
+            {/* </AuthCheck>  */}
           </Suspense>
         </ul>
       </div>
