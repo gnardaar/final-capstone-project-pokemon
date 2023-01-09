@@ -131,7 +131,7 @@ export const Contact = () => {
                       <div className="text pl-3">
                         <p>
                           <span>Phone:</span>
-                          <a href="tel://123456789">+(720)-831-4543</a>
+                          <a href="tel://7208314543">+(720)-831-4543</a>
                         </p>
                       </div>
                     </div>
@@ -142,7 +142,7 @@ export const Contact = () => {
                       <div className="text pl-3">
                         <p>
                           <span>Email:</span>
-                          <a href="mailto:info@yoursite.com">
+                          <a href="mailto:andrewkraus521@gmail.com">
                             andrewkraus521@gmail.com
                           </a>
                         </p>

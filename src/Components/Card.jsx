@@ -1,14 +1,14 @@
 import React from "react";
 import "./styles.scss";
 
-export default function Card({pokemon, loading,infoPokemon}) {
+export default  function Card({pokemon, loading,infoPokemon}) {
   console.log(pokemon);
   return (
     <div>
       {loading ? (
         <h1>Loading...</h1>
       ) : (
-        pokemon.map((item) => {
+        pokemon.map((item,id) => {
           return (
             <>
               <div className="card" key={item.id} onClick={()=>infoPokemon(item)}>

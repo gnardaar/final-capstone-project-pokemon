@@ -1,16 +1,15 @@
 // import { constants } from 'crypto'
 import React, { Suspense } from "react";
 import Button from "@material-ui/core/Button";
-
+import pokeballLogo from '../images/pokeballLogo.png'
 import { makeStyles } from "@material-ui/core";
 import "material-ui-core";
 import { Link } from "react-router-dom";
-// import { AuthCheck } from 'react'
 
 const useStyles = makeStyles({
   logo: {
-    // content: `url(${Digits})`,
-    maxWidth: "20%",
+    content: `url(${pokeballLogo})`,
+    maxWidth: "10%",
     height: "auto",
   },
   navlogo: {
@@ -32,12 +31,12 @@ const useStyles = makeStyles({
     flexDirection: "row",
   },
   navbar: {
-    backgroundImage: " linear-gradient(to right, green, gold,brown, red,blue)",
+    backgroundImage: "linear-gradient(rgba(250,0,0,0.5),transparent);",
     zIndex: 1,
     borderBottom: "1px solid grey",
   },
   navbarItem: {
-    fontSize:'2rem',
+    fontSize:'1rem',
     color: "white",
     textDecoration: "none",
   },
@@ -74,7 +73,7 @@ export const Navbar = () => {
       className={`${classes.row} ${classes.navbar} ${classes.width100} ${classes.alignCenter} ${classes.p5} ${classes.spaceBetween}`}
     >
       <div className={`${classes.navlogo} `}>
-          <Link to='/' className={`${classes.logo} ${classes.p5}`}>
+          <Link to='/pokemon' className={`${classes.logo} ${classes.p5}`}>
           </Link>
             </div>
       <div className={`${classes.width60} ${classes.alignCenter}`}>
@@ -89,7 +88,7 @@ export const Navbar = () => {
                 className={`${classes.navbarItem} ${classes.psides}`}
               >
                 {" "}
-                about me
+                ABOUT ME
               </Link>
             </li>
              {/* }>  */}
